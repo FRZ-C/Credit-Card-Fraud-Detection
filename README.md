@@ -32,6 +32,9 @@ Please note these differences.
 
 You should have extracted our group project file and please leave the files as they are as much as possible.
 
+You may download the original dataset from kaggle at this link:
+[Dataset](#https://www.kaggle.com/datasets/kartik2112/fraud-detection)
+
 ### Model Setup
 To get the models to run on Kaggle, upload the model file which you wish to use. 
 
