@@ -15,12 +15,22 @@ This is a readme file for our group project codes. We hope this will help to nav
 
 ## Folder contents
 The contents of this group project submission folder should contain 2 folders and 2 ipynb files.
+- Inside the 'Fraud dataset' folder, it should contain 3 files. 2 csv files and 1 ipynb file.
+- Inside the 'Feature generated dataset' folder, it should contain 3 files. 2 csv files and 1 ipynb file.
+- The main file that will be used is the 'Model with Coefficients.ipynb' file as it is the latest version of our model file.
 
-Inside the 'Fraud dataset' folder, it should contain 3 files. 2 csv files and 1 ipynb file.
-
-Inside the 'Feature generated dataset' folder, it should contain 3 files. 2 csv files and 1 ipynb file.
-
-The main file that will be used is the 'Model with Coefficients.ipynb' file as it is the latest version of our model file.
+The structure should be organised as follows:
+├── README.md                       # Project overview and setup instructions
+├── Fraud dataset                   # Dataset source file
+│   ├── EDA.ipynb                   # Jupyter notebook containing EDA codes
+│   ├── fraudTest.csv               # Fraud test dataset downloaded from kaggle
+│   └── fraudTrain.csv              # Fraud train dataset downloaded from kaggle
+├── Feature generated dataset       # Feature generation
+│   ├── Feature generation.ipynb    # Jupyter notebook containing feature engineering codes
+│   ├── test_dataset.csv            # Fraud test dataset with generated features
+│   └── train_dataset.csv           # Fraud train dataset with generated features
+├── Model with Coefficients.ipynb   # Updated models code that shows coefficient scores
+└── Models.ipynb                    # Initial models code
 
 --------------------------------------------------------------
 
@@ -28,21 +38,14 @@ The main file that will be used is the 'Model with Coefficients.ipynb' file as i
 Our models were made to work using Kaggle. 
 However, our feature generation file was made to work locally to save the feature generated dataset. 
 Also, our EDA ipynb was made to work on Google colab. 
-Please note these differences.
 
-You should have extracted our group project file and please leave the files as they are as much as possible.
+Upon downloading the repository, please leave the files as they are as much as possible.
+Please also note that this repository do not contain the original datasets and feature engineered dataset.
 
-You may download the original dataset from kaggle at this link:
+You may download the original dataset from kaggle at this link and place it in the correct folders according to the structure above:
 [Dataset](https://www.kaggle.com/datasets/kartik2112/fraud-detection)
 
-### Model Setup
-To get the models to run on Kaggle, upload the model file which you wish to use. 
-
-Then upload the train_dataset.csv and test_dataset.csv from the 'Feature generated dataset' folder.
-
-NOTE: DO NOT use the file from the 'Fraud dataset' folder as this contains only the raw dataset without our new features. 
-
-### Feature generated dataset Setup (Optional)
+### Feature generated dataset Setup
 If you wish to recreate our feature generated dataset you will have to run the 'Feature generation.ipynb' file located in the 'Feature generated dataset' folder.
 
 We ran this file locally so as to save the feature generated dataset.
@@ -53,6 +56,13 @@ If you encounter any errors, please check the path of the dataset.
 Once all the cells have been run, the feature generated dataset should be in the same directory as this 'Feature generation.ipynb'.
 
 They should be named 'train_dataset.csv' and 'test_dataset.csv' respectively.
+
+### Model Setup
+To get the models to run on Kaggle, upload the model file which you wish to use. 
+
+Then upload the train_dataset.csv and test_dataset.csv from the 'Feature generated dataset' folder.
+
+NOTE: DO NOT use the file from the 'Fraud dataset' folder as this contains only the raw dataset without our new features. 
 
 ### EDA Setup (Optional)
 If you wish to recreate our EDA results you will have to run the 'EDA.ipynb' file located in the 'Fraud dataset' folder.
