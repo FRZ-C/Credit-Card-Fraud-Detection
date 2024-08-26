@@ -1,4 +1,4 @@
-# AML Group 5 Project
+# Applied Machine Learning Group Project
 # Credit Card Fraud detection 
 
 This is a readme file for our group project codes. We hope this will help to navigate the different files and codes. 
