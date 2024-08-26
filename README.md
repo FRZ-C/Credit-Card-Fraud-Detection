@@ -49,31 +49,27 @@ You may download the original dataset from kaggle at this link and place it in t
 If you wish to recreate our feature generated dataset you will have to run the 'Feature generation.ipynb' file located in the 'Feature generated dataset' folder.
 
 We ran this file locally so as to save the feature generated dataset.
-If you have kept the file structure as it is, you may just run all the cells.
+- If you have kept the file structure as it is, you may just run all the cells.
+- If you encounter any errors, please check the path of the dataset.
 
-If you encounter any errors, please check the path of the dataset.
-
-Once all the cells have been run, the feature generated dataset should be in the same directory as this 'Feature generation.ipynb'.
-
-They should be named 'train_dataset.csv' and 'test_dataset.csv' respectively.
+Once all the cells have been run, the feature generated dataset should be in the same directory as this 'Feature generation.ipynb'. They should be named `train_dataset.csv` and `test_dataset.csv` respectively.
 
 ### Model Setup
-To get the models to run on Kaggle, upload the model file which you wish to use. 
+To get the models to run on Kaggle, upload the model file which you wish to use. Then upload the `train_dataset.csv` and `test_dataset.csv` from the `Feature generated dataset` folder.
 
-Then upload the train_dataset.csv and test_dataset.csv from the 'Feature generated dataset' folder.
-
-NOTE: DO NOT use the file from the 'Fraud dataset' folder as this contains only the raw dataset without our new features. 
+**NOTE**: **DO NOT** use the file from the `Fraud dataset` folder as this contains only the raw dataset without our new features. 
 
 ### EDA Setup (Optional)
-If you wish to recreate our EDA results you will have to run the 'EDA.ipynb' file located in the 'Fraud dataset' folder.
+If you wish to recreate our EDA results you will have to run the `EDA.ipynb` file located in the `Fraud dataset` folder.
 
 We ran this file on Google Colab. So please ensure that after you have mounted your drive, the file path is according to how you have it set up on your drive.
 
-please change this cell accordingly: %cd /content/drive/MyDrive/MITB/Applied Machine Learning/Group Project Submission/Fraud dataset
+please change this cell accordingly: 
+```
+%cd /content/drive/MyDrive/MITB/Applied Machine Learning/Group Project Submission/Fraud dataset
+```
 
-If you encounter any errors, please check the path of the dataset.
-
-You can just run all the cells to recreate our EDA findings.
+If you encounter any errors, please check the path of the dataset. You can just run all the cells to recreate our EDA findings.
 
 --------------------------------------------------------------
 
@@ -83,17 +79,17 @@ Also ensure that under Accelerator > please select the GPU T4 x2.
 
 To recreate our results, please run all the cells. 
 
-NOTE: The whole run time of our file might take 1 hour 30 mins. This is mostly due to the hyper parameter tuning section. 
+**NOTE**: The whole run time of our file might take 1 hour 30 mins. This is mostly due to the hyper parameter tuning section. 
 
 If you wish to have a faster run time, please comment out the hyper parameter tuning models and ensure that you comment out these lines in the 5th last cell:
+```
 model_metrics_list.append(rf_tuned_model_metrics)
 model_names.extend('Tuned Random Forest')
 model_metrics_list.append(lgr_tuned_model_metrics)
 model_names.extend('Tuned Log Regression')
+```
 
-The team also understands that the parts for the model coefficient is rather messy. 
-
-This is due to the structure of how we saved the coefficients for the tuned models.
+The team also understands that the parts for the model coefficient is rather messy. This is due to the structure of how we saved the coefficients for the tuned models.
 
 The current version is the one that best outputs all the coefficients, other methods have led to bugs that do not show the coefficients nicely.
 
