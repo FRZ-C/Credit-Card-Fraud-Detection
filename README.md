@@ -18,7 +18,7 @@ The contents of this group project submission folder should contain 2 folders an
 - Inside the 'Fraud dataset' folder, it should contain 3 files. 2 csv files and 1 ipynb file.
 - Inside the 'Feature generated dataset' folder, it should contain 3 files. 2 csv files and 1 ipynb file.
 - The main file that will be used is the 'Model with Coefficients.ipynb' file as it is the latest version of our model file.
-
+```
 The structure should be organised as follows:
 ├── README.md                       # Project overview and setup instructions
 ├── Fraud dataset                   # Dataset source file
@@ -31,7 +31,7 @@ The structure should be organised as follows:
 │   └── train_dataset.csv           # Fraud train dataset with generated features
 ├── Model with Coefficients.ipynb   # Updated models code that shows coefficient scores
 └── Models.ipynb                    # Initial models code
-
+```
 --------------------------------------------------------------
 
 ## Setup
